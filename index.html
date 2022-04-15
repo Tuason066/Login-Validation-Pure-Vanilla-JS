@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/8cf5703070.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@400;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- script -->
+    <script defer src="./login/login.js"></script>
+    <script defer src="./login/init.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="login">
+            <h1>Log In</h1>
+            <form action="./welcome.html" class="login-form">
+                <div class="form-group">
+                    <div class="wrapper">
+                        <input type="text" id="username" placeholder="Username">
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <div class="wrapper">
+                        <input type="password" id="password" placeholder="Password">
+                        <button type="button" class="password-btn">
+                            <span class="show"><i class="fa-solid fa-eye"></i></span>
+                            <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+                        </button>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <hr>
+            <a href="./signup.html" class="createAccount">Create New Account</a>
+        </section>
+    </div>
+
+</body>
+</html>

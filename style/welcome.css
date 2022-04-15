@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Athiti', sans-serif;
+  font-size: .875rem;
+}
+
+.container {
+  background-color: #e6f4f1;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #364b44;
+}
+
+.logout {
+  font-size: 1rem;
+}
+
+.logout:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .logout {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=welcome.css.map */

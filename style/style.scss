@@ -1,0 +1,165 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Athiti', sans-serif;
+    font-size: .875rem;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #364b44;
+    letter-spacing: .1rem;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #a8aabc;
+}
+
+.backToLogin {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    color: #6e98ff;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.login,
+.signup {
+    position: relative;
+    padding: 2rem;
+    background-color: #e6f4f1;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #95b1b0;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+    & input {
+        width: 100%;
+        padding: .5rem 2.4rem .5rem .5rem;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #222;
+        outline: none;
+        letter-spacing: 1px;
+        font-size: .875rem;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            letter-spacing: 1px;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            letter-spacing: 1px;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            letter-spacing: 1px;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+}
+
+.password-btn {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .75rem;
+}
+.show {
+    display: none;
+}
+.toggle-password .show{
+    display: block;
+}
+.toggle-password .hide {
+    display: none;
+}
+
+.form-group .input-error {
+    border: 1px solid red;
+}
+
+.error-message {
+    display: block;
+    text-align: left;
+    font-size: .75rem;
+    color: red;
+    letter-spacing: 1px;
+    padding-left: .5rem;
+    margin-top: .1rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 50%;
+    margin: 1.5rem auto 1.75rem;
+    padding: .5em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: .875rem;
+    background-color: #afc2ff;
+    color: #003e43;
+    border: 1px solid #afc2ff;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: rgba(175, 194, 255, 0.75);
+    }
+}
+
+.createAccount {
+    display: block;
+    margin-top: 2rem;
+    transition: all 0.4s ease;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .password-btn {
+        font-size: .875rem;
+    }
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
