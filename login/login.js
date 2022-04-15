@@ -1,5 +1,3 @@
-document.querySelector('body').style.display = 'none';
-
 class User {
     constructor(username, password) {
         this.username = username;
@@ -117,6 +115,8 @@ passwordBtn.addEventListener('click', function(e) {
 
 class UI {
     static validateLoginHistory() {
+        document.querySelector('body').style.display = 'none';
+
         const newUser = localStorage.getItem('newUser') ? true : false;
         const users = localStorage.getItem('users') ? true : false;
 
